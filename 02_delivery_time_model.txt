@@ -1,0 +1,46 @@
+### M1
+Training rows: 23569 Test rows: 14431
+Numeric features: 8 Categorical features: 5
+### M2
+                     RMSE    MAE     R2
+model                                  
+Gradient Boosting   7.233  5.306  0.558
+Random Forest       7.279  5.350  0.552
+Decision Tree       7.361  5.396  0.542
+Linear Regression   7.437  5.540  0.533
+Baseline (mean)    11.182  9.010 -0.056
+### M3
+Best settings: {'min_samples_leaf': 20, 'max_leaf_nodes': 63, 'max_iter': 150, 'max_depth': 3, 'learning_rate': 0.08, 'l2_regularization': 1.0}
+Cross validated RMSE after tuning: 6.676
+### M4
+               RMSE    MAE     R2
+Baseline     12.511  9.536 -0.006
+Tuned model   7.295  5.266  0.658
+               MAE hub  bias hub
+hub                             
+Nagpur            4.65      0.07
+Nashik            7.18     -0.16
+Pune              4.52      0.26
+Sambhajinagar     4.81     -0.08
+MAE by period: {'festive months': 5.85, 'normal months': 4.84}
+### M5
+              precision    recall  f1-score   support
+
+     on time      0.876     0.937     0.906     11236
+        late      0.708     0.535     0.609      3195
+
+    accuracy                          0.848     14431
+   macro avg      0.792     0.736     0.757     14431
+weighted avg      0.839     0.848     0.840     14431
+
+ROC AUC of predicted minus promised hours: 0.821
+### M6
+promised_hours    4.76
+hub               2.51
+festive           0.85
+distance_km       0.29
+weekday           0.24
+zone              0.02
+shipping_mode     0.02
+weight_kg         0.00
+dtype: float64

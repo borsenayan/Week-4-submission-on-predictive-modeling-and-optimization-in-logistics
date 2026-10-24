@@ -1,0 +1,31 @@
+### D1
+Shipments: 38000 from 2024-10-01 to 2026-03-31
+Target: delivery_hours (hours from order to delivery)
+count    38000.0
+mean        21.7
+std         12.0
+min          1.4
+25%         12.6
+50%         20.7
+75%         28.3
+max        148.3
+Name: delivery_hours, dtype: float64
+### D2
+Features: 13
+                         0        1        2
+hub                 Nashik   Nashik   Nashik
+zone                 Urban    Urban    Urban
+shipping_mode     Standard  Express  Express
+product_category      Home  Fashion  Fashion
+vehicle_type          Bike      Van      Van
+distance_km            3.7     12.5     42.0
+weight_kg              9.4     22.6      0.5
+parcels                  3       38        1
+promised_hours          32       15       15
+order_hour               0        0        0
+weekday                  1        1        1
+festive                  1        1        1
+hub_load_24h             0        1        2
+### D3
+test 14431 shipments, festive share: 42% late rate: 22.1%
+train 23569 shipments, festive share: 22% late rate: 19.4%

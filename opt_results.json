@@ -1,0 +1,107 @@
+{
+  "staff_plan": [
+    {
+      "hub": "Pune",
+      "volume": 36.4,
+      "naive staff": 11,
+      "naive coverage": 1.21,
+      "optimal staff": 8,
+      "optimal coverage": 0.88
+    },
+    {
+      "hub": "Nagpur",
+      "volume": 21.8,
+      "naive staff": 7,
+      "naive coverage": 1.14,
+      "optimal staff": 6,
+      "optimal coverage": 0.98
+    },
+    {
+      "hub": "Sambhajinagar",
+      "volume": 17.9,
+      "naive staff": 5,
+      "naive coverage": 0.89,
+      "optimal staff": 5,
+      "optimal coverage": 0.89
+    },
+    {
+      "hub": "Nashik",
+      "volume": 25.2,
+      "naive staff": 8,
+      "naive coverage": 0.6,
+      "optimal staff": 12,
+      "optimal coverage": 0.89
+    }
+  ],
+  "pool": 31,
+  "short_naive": 12.1,
+  "short_best": 9.4,
+  "min_cov_naive": 0.6,
+  "min_cov_best": 0.88,
+  "sweep": [
+    {
+      "buffer_h": -8,
+      "flagged": 8714,
+      "late_avoided": 1415,
+      "net_benefit": -5600
+    },
+    {
+      "buffer_h": -6,
+      "flagged": 7316,
+      "late_avoided": 1306,
+      "net_benefit": 13000
+    },
+    {
+      "buffer_h": -4,
+      "flagged": 5583,
+      "late_avoided": 1197,
+      "net_benefit": 39975
+    },
+    {
+      "buffer_h": -2,
+      "flagged": 3565,
+      "late_avoided": 945,
+      "net_benefit": 52625
+    },
+    {
+      "buffer_h": 0,
+      "flagged": 2414,
+      "late_avoided": 792,
+      "net_benefit": 58450
+    },
+    {
+      "buffer_h": 2,
+      "flagged": 1835,
+      "late_avoided": 645,
+      "net_benefit": 50875
+    },
+    {
+      "buffer_h": 4,
+      "flagged": 1565,
+      "late_avoided": 541,
+      "net_benefit": 42025
+    },
+    {
+      "buffer_h": 6,
+      "flagged": 1484,
+      "late_avoided": 507,
+      "net_benefit": 38950
+    },
+    {
+      "buffer_h": 8,
+      "flagged": 1185,
+      "late_avoided": 397,
+      "net_benefit": 29925
+    }
+  ],
+  "best_buffer": 0,
+  "base_late": 3195,
+  "n_test": 14431,
+  "stops": 30,
+  "km_sweep": 549.8,
+  "km_opt": 436.0,
+  "vans_sweep": 6,
+  "vans_opt": 5,
+  "km_saved_pct": 20.7,
+  "route_saving_rs": 1024
+}

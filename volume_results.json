@@ -1,0 +1,41 @@
+{
+  "volume_table": {
+    "Naive (same day last week)": {
+      "MAE": 5.47,
+      "RMSE": 7.1,
+      "WAPE %": 27.59
+    },
+    "Linear Regression": {
+      "MAE": 4.32,
+      "RMSE": 5.62,
+      "WAPE %": 21.78
+    },
+    "Linear Regression, log target": {
+      "MAE": 4.31,
+      "RMSE": 5.61,
+      "WAPE %": 21.73
+    },
+    "Gradient Boosting": {
+      "MAE": 4.37,
+      "RMSE": 5.8,
+      "WAPE %": 22.04
+    }
+  },
+  "selected_volume_model": "Linear Regression, log target",
+  "bias_festive": -9.9,
+  "wape_festive": 21.0,
+  "bias_normal": -7.4,
+  "wape_normal": 22.3,
+  "peak_forecast": {
+    "Nagpur": 19.8,
+    "Nashik": 22.9,
+    "Pune": 33.1,
+    "Sambhajinagar": 16.3
+  },
+  "peak_actual": {
+    "Nagpur": 19.9,
+    "Nashik": 24.1,
+    "Pune": 37.0,
+    "Sambhajinagar": 15.6
+  }
+}

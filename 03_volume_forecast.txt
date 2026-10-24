@@ -1,0 +1,26 @@
+### V1
+Rows: 2132 Hubs: 4
+hub
+Nagpur           15.1
+Nashik           17.2
+Pune             24.2
+Sambhajinagar    12.4
+Name: volume, dtype: float64
+### V2
+                                MAE  RMSE  WAPE %
+model                                            
+Naive (same day last week)     5.47  7.10   27.59
+Linear Regression              4.32  5.62   21.78
+Linear Regression, log target  4.31  5.61   21.73
+Gradient Boosting              4.37  5.80   22.04
+### V3
+Selected model: Linear Regression, log target
+Festive months WAPE: 21.0% Bias: -9.9%
+Normal months WAPE: 22.3% Bias: -7.4%
+Forecast and actual shipments, week of 3 November 2025
+               forecast  volume
+hub                            
+Nagpur             19.8    19.9
+Nashik             22.9    24.1
+Pune               33.1    37.0
+Sambhajinagar      16.3    15.6

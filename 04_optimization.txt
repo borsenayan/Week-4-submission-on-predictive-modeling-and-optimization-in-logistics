@@ -1,0 +1,29 @@
+### O1
+Forecast shipments per day: {'Pune': 36.4, 'Nagpur': 21.8, 'Sambhajinagar': 17.9, 'Nashik': 25.2}
+Pickers needed for full coverage: [9.1, 6.1, 5.6, 13.4] Pool available: 31
+               volume  naive staff  naive coverage  optimal staff  optimal coverage
+hub                                                                                
+Pune             36.4           11            1.21              8              0.88
+Nagpur           21.8            7            1.14              6              0.98
+Sambhajinagar    17.9            5            0.89              5              0.89
+Nashik           25.2            8            0.60             12              0.89
+Shipments left over per day, naive: 12.1 optimised: 9.4
+### O2
+Late shipments without action: 3195 of 14431
+          flagged  late_avoided  net_benefit
+buffer_h                                    
+-8           8714          1415        -5600
+-6           7316          1306        13000
+-4           5583          1197        39975
+-2           3565           945        52625
+0            2414           792        58450
+2            1835           645        50875
+4            1565           541        42025
+6            1484           507        38950
+8            1185           397        29925
+Best buffer: 0 hours with net benefit of Rs 58450
+### O3
+Stops: 30 Total load: 1915 kg Van capacity: 400 kg
+Sweep plan: 6 vans, 549.8 km
+Optimised plan: 5 vans, 436.0 km
+Distance saved: 20.7% Cost saved per day: Rs 1024

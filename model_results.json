@@ -1,0 +1,80 @@
+{
+  "cv_table": {
+    "Baseline (mean)": {
+      "RMSE": 11.182,
+      "MAE": 9.01,
+      "R2": -0.056
+    },
+    "Linear Regression": {
+      "RMSE": 7.437,
+      "MAE": 5.54,
+      "R2": 0.533
+    },
+    "Decision Tree": {
+      "RMSE": 7.361,
+      "MAE": 5.396,
+      "R2": 0.542
+    },
+    "Random Forest": {
+      "RMSE": 7.279,
+      "MAE": 5.35,
+      "R2": 0.552
+    },
+    "Gradient Boosting": {
+      "RMSE": 7.233,
+      "MAE": 5.306,
+      "R2": 0.558
+    }
+  },
+  "best_params": {
+    "min_samples_leaf": 20.0,
+    "max_leaf_nodes": 63.0,
+    "max_iter": 150.0,
+    "max_depth": 3.0,
+    "learning_rate": 0.08,
+    "l2_regularization": 1.0
+  },
+  "tuned_cv_rmse": 6.676,
+  "test_metrics": {
+    "Baseline": {
+      "RMSE": 12.511,
+      "MAE": 9.536,
+      "R2": -0.006
+    },
+    "Tuned model": {
+      "RMSE": 7.295,
+      "MAE": 5.266,
+      "R2": 0.658
+    }
+  },
+  "mae_by_hub": {
+    "Nagpur": 4.65,
+    "Nashik": 7.18,
+    "Pune": 4.52,
+    "Sambhajinagar": 4.81
+  },
+  "mae_by_period": {
+    "festive months": 5.85,
+    "normal months": 4.84
+  },
+  "late_precision": 0.708,
+  "late_recall": 0.535,
+  "late_f1": 0.609,
+  "late_auc": 0.821,
+  "late_accuracy": 0.848,
+  "importance": {
+    "promised_hours": 4.76,
+    "hub": 2.51,
+    "festive": 0.85,
+    "distance_km": 0.29,
+    "weekday": 0.24,
+    "zone": 0.02,
+    "shipping_mode": 0.02,
+    "weight_kg": 0.0,
+    "hub_load_24h": 0.0,
+    "parcels": 0.0,
+    "product_category": 0.0,
+    "vehicle_type": -0.0,
+    "order_hour": -0.0
+  }
+}
